@@ -1,6 +1,5 @@
 package com.baobaotao.schema;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.baobaotao.Seller;
@@ -9,7 +8,7 @@ import com.baobaotao.Waiter;
 public class SchemaAspectTest {
 	public static void main(String[] args) {
 		String configPath = "com/baobaotao/schema/beans.xml";
-		ApplicationContext ctx = new ClassPathXmlApplicationContext(configPath);
+		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext(configPath);
 		Waiter naiveWaiter = (Waiter) ctx.getBean("naiveWaiter");
 		Waiter naughtyWaiter = (Waiter) ctx.getBean("naughtyWaiter");	
 		Seller seller = (Seller) ctx.getBean("seller");
