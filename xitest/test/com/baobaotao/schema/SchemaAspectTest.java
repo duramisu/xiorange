@@ -10,7 +10,7 @@ public class SchemaAspectTest {
 		String configPath = "com/baobaotao/schema/beans.xml";
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext(configPath);
 		Waiter naiveWaiter = (Waiter) ctx.getBean("naiveWaiter");
-		Waiter naughtyWaiter = (Waiter) ctx.getBean("naughtyWaiter");	
+		Waiter naughtyWaiter = (Waiter) ctx.getBean("naughtyWaiter");
 		Seller seller = (Seller) ctx.getBean("seller");
 //		naiveWaiter.greetTo("John");
 //		naughtyWaiter.greetTo("Tom");
