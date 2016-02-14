@@ -7,7 +7,7 @@ import com.baobaotao.Waiter;
 
 public class SchemaAspectTest {
 	public static void main(String[] args) {
-		String configPath = "com/baobaotao/schema/beans.xml";
+		String configPath = "com/baobaotao/schema/beans.xml";//测试
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext(configPath);
 		Waiter naiveWaiter = (Waiter) ctx.getBean("naiveWaiter");
 		Waiter naughtyWaiter = (Waiter) ctx.getBean("naughtyWaiter");
